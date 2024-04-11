@@ -13,6 +13,8 @@ function cleanInputString(str) {
     return str.replace(regex, '')
 }
 
+console.log(cleanInputString("+-99"))
+
 function isInvalidInput(str) {
     const regex = /\d+e\d+/i;
     return str.match(regex);
