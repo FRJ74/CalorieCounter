@@ -30,11 +30,20 @@ function addEntry() {
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
+function calculateCalories(e) {
+  e.preventDefault();
+  isError = false;
+  const breakfastNumberInputs = document.querySelectorAll("#breakfast Input[type=number]");
+  const lunchNumberInputs = document.querySelectorAll("#lunch Input[type=number]");
+}
+
 function getCaloriesFromInputs(list) {
   let calories = 0;
   for(const item of list) {
     const currVal = cleanInputString(item.value);
     const invalidInputMatch = isInvalidInput(currVal);
+    return calories;
+
     if (invalidInputMatch) {
       alert(`Invalid Input: ${invalidInputMatch[0]}`)
       isError = true;
