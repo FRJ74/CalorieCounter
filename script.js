@@ -79,8 +79,8 @@ function getCaloriesFromInputs(list) {
   return calories;
 };
 
-const clearForm = () => {
-
+function clearForm() {
+  const inputContainers = Array.from(document.querySelectorAll('.input-container'));
 };
 
 addEntryButton.addEventListener("click", addEntry);
