@@ -86,8 +86,9 @@ function clearForm() {
   };
 
   budgetNumberInput.value = "" ;
-  output.innerText = "";
+  output.innerText = '';
   output.classList.add("hide");
+
 
 };
 
