@@ -92,7 +92,7 @@ function clearForm() {
 
 };
 
-//** */ event listeners **//
+/* event listeners */
 
 addEntryButton.addEventListener("click", addEntry);
 calorieCounter.addEventListener("submit", calculateCalories);
